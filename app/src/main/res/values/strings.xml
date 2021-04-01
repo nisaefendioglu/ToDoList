@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My To Do List</string>
+    <string name="action_settings">Delete All Tasks</string>
+
+    <string name="empty_view_title_text">"Let's go start by adding task"</string>
+
+    <string name="insert_dummy_data">Insert Dummy Data</string>
+    <string name="delete_all_data">Delete All Data</string>
+
+    <string name="editor_activity_title_new_task">Add Task</string>
+    <string name="editor_activity_title_edit_task">Edit Task</string>
+    <string name="action_save">Save</string>
+
+    <string name="edit_task_description">To Do Add &#8230;</string>
+
+    <string name="add_button">Add</string>
+    <string name="update_button">Update</string>
+
+</resources>

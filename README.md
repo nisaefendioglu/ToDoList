@@ -5,7 +5,8 @@ Create, update, delete, read tasks using Couchbase lite.
 ## Build and run the app
 
 Run the app using the "play" or "debug" button.
-https://github.com/[nisaefendioglu]/[ToDoList]/blob/[master]/login.jpg?raw=true
+
+![Altdtext](relative/path/to/login.jpg?raw=true "Title")
 
 ![loginPage](https://github.com/[nisaefendioglu]/[ToDoList]/blob/[branch]/login.jpg?raw=true)
 ![signUpPage](https://github.com/[nisaefendioglu]/[ToDoList]/blob/[branch]/signup.jpg?raw=true)

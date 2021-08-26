@@ -26,7 +26,7 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
     private final String TAG = ListActivity.class.getSimpleName();
     private static final String DEFAULT_TASK_ID="-1";
 
-    // todolist alanları
+    // todolist fields
     private final String ID = "id";
     private final String DESCRIPTION = "description";
     private final String PRIORITY = "priority";
@@ -59,13 +59,13 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
         getDb().addChangeListener(this);
 
     }
-//database işlemleri
+//database operations
     private Database getDb() {
         return CouchDatabase.getInstance(
                 getApplicationContext());
     }
 
-//girilen veriyi editleme
+//data edited.
     private void setEditorTitle(int flag) {
         ActionBar actionBar = getSupportActionBar();
 
@@ -81,7 +81,7 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-//ui kısmına text
+//ui text
     private void populateUi(String docId) {
         Document document = getDb().getDocument(docId);
 
@@ -102,7 +102,7 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-//verileri ekleme
+//data added.
     private void addDocument(Database database) {
         int count = (int) database.getCount();
         Log.i(TAG, "count : " + count);
@@ -123,7 +123,7 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-//verilerin güncellenmesi
+//data updated
     private void updateDocument(Database database) {
         Document document = database.getDocument(mTaskId);
 
@@ -144,7 +144,7 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-//veri başlatma
+//data initialization
     @Override
     public void changed(DatabaseChange change) {
         Intent intent = new Intent(

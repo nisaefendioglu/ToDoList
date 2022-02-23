@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My To Do List</string>
+    <string name="app_name">My ToDo</string>
     <string name="action_settings">Delete All Tasks</string>
 
     <string name="empty_view_title_text">"Let's go start by adding task"</string>
